@@ -1,0 +1,9 @@
+/* Classes */
+.left-container {
+    float: left;
+    width: 50%;
+}
+.right-container {
+    float: right;
+    width: 50%;
+}
