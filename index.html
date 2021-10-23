@@ -33,8 +33,11 @@
                     <div class = "right-container">
                         <p class = "card-text">Which hair type are you? Input a picture of your hair below and we'll help you find your hair type!</p>
                     </div>
-                    <div class="form-group">
-                        <input class="form-control" type="file" id="formFile">
+                    <div class="form-group"></div>
+                        <form action="upload.php" method = "POST" enctype = "multipart/form-data">
+                            <input class="form-control" type="file" id="img" name="img" accept="image/*">
+                            <input class="btn btn-primary" type="submit">
+                        </form>
                     </div>
                 </div>
               </div>
