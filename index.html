@@ -22,7 +22,9 @@
                 <div class="card-body">
                   <p class="card-text" id="test">Answer some questions about your curly hair journey and what products you use.</p>
 
-                  <form>
+                  <button type="submit" class="btn btn-primary" id="getStarted">Get Started!</button>
+
+                  <form id="newUserForm" style="display:none">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -31,6 +33,24 @@
                     <div class="form-group">
                       <label for="exampleInputPassword1">Password</label>
                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="hairType">Hair Type</label>
+                      <input type="text" class="form-control" id="hairType" placeholder="2a, 3a, 4c, etc...">
+                    </div>
+                    <div class="form-group">
+                      <label for="shampoo">Shampoo</label>
+                      <input type="text" class="form-control" id="shampoo" placeholder="Shea Moisture Curl & Shine Shampoo, Garnier Fructis Sleek & Shine, etc...">
+                    </div>
+                    <div class="form-group">
+                      <label for="conditioner">Conditioner</label>
+                      <input type="text" class="form-control" id="conditioner" placeholder="REDKEN Curvaceous Conditioner, Ogx Quenching coconut Curls, etc...">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="otherProducts">Other Products</label>
+                      <input type="text" class="form-control" id="otherProducts" placeholder="Must Have Additions">
                     </div>
                     
                     <button type="submit" class="btn btn-primary" id="newUser">Submit</button>
