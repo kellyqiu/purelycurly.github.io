@@ -1,13 +1,13 @@
 //UI Variables
 const newUser = document.getElementById("newUser");
 const getStarted = document.getElementById('getStarted');
-const submitImage = document.getElementById('submitImage')
+const hairType = document.getElementById('submitHairType')
 
 //Event Listeners
 newUser.addEventListener('click', saveUserData);
 getStarted.addEventListener('click', showForm)
-submitImage.addEventListener('click', showHairType)
-    
+hairType.addEventListener('click', submitHairType)
+
 
 //User Array
 let users = [];
@@ -25,10 +25,8 @@ function hideForm(e){
     x.style.display = "none"
 }
 
-function showHairType(e) {
-    var x = document.getElementById('hairTypeOutput')
-    x.style.display = "block"
-}
+
+
 //Save User Data
 function saveUserData(e){
     e.preventDefault();
@@ -50,4 +48,31 @@ function saveUserData(e){
 
     //saving to localStorage
     localStorage.setItem('MyUserList', JSON.stringify(users) );
+}
+
+//Output Hair Type Info
+function submitHairType(e) {
+    e.preventDefault();
+    var userHairType = document.getElementById('hair').value;
+    var storedValue = localStorage.getItem('MyUserList');
+    var object = JSON.parse(storedValue);
+    var shampooDict = {}
+    var conditionerDict = {}
+    for(let i = 0; i < object.length; i++) {
+        if (object[i].hairType == userHairType) {
+            if (!shampooDict[object[i].shampoo]) {
+                shampooDict[object[i].shampoo] = 1;
+            } else {
+                shampooDict[object[i].shampoo] += 1;
+            }
+            if (!conditionerDict[object[i].conditioner]) {
+                conditionerDict[object[i].conditioner] = 1;
+            } else {
+                conditionerDict[object[i].conditioner] += 1;
+            }
+        }
+    }
+    console.log(shampooDict);
+    console.log(conditionerDict);
+
 }

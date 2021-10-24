@@ -82,16 +82,24 @@
                     </div>
                 </div>
               </div>
-              
-              <div class="card border-info mb-3" style="width: 100%;">
+
+
+            <div class="card border-info mb-3" style="width: 100%;">
                 <div class="card-header">Find Suggested Products!</div>
                 <div class="card-body">
-                  <p class="card-text">Find products suited for you based on your hair features.</p>
-                </div>
-            </div>
-            
+                  <p class="card-text">Find products suited for you based on your hair features!</p>
+                  <form id="findProducts">
+                    <div class="form-group">
+                      <label>Input Hair Type</label>
+                      <input class="form-control" id = 'hair' placeholder="2, 3, 4">
+                      <small class="form-text text-muted">Need help finding your hair type? Try using our hair type finder above!</small>
+                    </div>  
+                    <button type="submit" class="btn btn-primary" id="submitHairType">Submit</button>
+                  </form>
+                  
 
-        </div>
+                </div>
+              </div>
 
 <script src="app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
