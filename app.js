@@ -37,7 +37,7 @@ function saveUserData(e){
             conditioner: document.getElementById('conditioner').value,
             otherProducts: document.getElementById('otherProducts').value
         }
-        console.log(users);
+        #console.log(users);
         users.push(user);
         document.forms[0].reset();
     }
