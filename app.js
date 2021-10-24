@@ -3,14 +3,16 @@ const newUser = document.getElementById("newUser");
 const getStarted = document.getElementById('getStarted');
 const hairType = document.getElementById('submitHairType')
 
+
 //Event Listeners
 newUser.addEventListener('click', saveUserData);
-getStarted.addEventListener('click', showForm)
-hairType.addEventListener('click', submitHairType)
+hairType.addEventListener('click', submitHairType);
+getStarted.addEventListener('click', showForm);
+document.addEventListener('DOMContentLoaded', preloadedUserData);
 
 
 //User Array
-let users = [];
+var users = [];
 
 //HELPER FUNCTIONS
 //Show Form
@@ -40,6 +42,7 @@ function saveUserData(e){
             conditioner: document.getElementById('conditioner').value,
             otherProducts: document.getElementById('otherProducts').value
         }
+       
         users.push(user);
         document.forms[0].reset();
     }
@@ -76,3 +79,191 @@ function submitHairType(e) {
     console.log(conditionerDict);
 
 }
+
+
+        // preloadedData = {"preloadedData": [
+        //     {
+        //         "id": "000",
+        //         "email": "a@att.net",
+        //         "password": "a",
+        //         "hairType": "2",
+        //         "shampoo": "brandA",
+        //         "conditioner": "brandA",
+        //         "otherProducts": "brandA"
+        //     },
+        //     {
+        //         "id": "001",
+        //         "email": "a1@att.net",
+        //         "password": "a1",
+        //         "hairType": "2",
+        //         "shampoo": "brandA",
+        //         "conditioner": "brandA",
+        //         "otherProducts": "brandA"
+        //     },
+        //     {
+        //         "id": "002",
+        //         "email": "a2@att.net",
+        //         "password": "a2",
+        //         "hairType": "2",
+        //         "shampoo": "brandB",
+        //         "conditioner": "brandB",
+        //         "otherProducts": "brandB"
+        //     },
+        //     {
+        //         "id": "003",
+        //         "email": "b@att.net",
+        //         "password": "b",
+        //         "hairType": "3",
+        //         "shampoo": "brandB",
+        //         "conditioner": "brandB",
+        //         "otherProducts": "brandB"
+        //     },
+        //     {
+        //         "id": "004",
+        //         "email": "b1@att.net",
+        //         "password": "b1",
+        //         "hairType": "3",
+        //         "shampoo": "brandB",
+        //         "conditioner": "brandB",
+        //         "otherProducts": "brandB"
+        //     },
+        //     {
+        //         "id": "005",
+        //         "email": "b2@att.net",
+        //         "password": "b2",
+        //         "hairType": "3",
+        //         "shampoo": "brandB",
+        //         "conditioner": "brandB",
+        //         "otherProducts": "brandB"
+        //     },
+        //     {
+        //         "id": "006",
+        //         "email": "c@att.net",
+        //         "password": "b",
+        //         "hairType": "4",
+        //         "shampoo": "brandB",
+        //         "conditioner": "brandB",
+        //         "otherProducts": "brandB"
+        //     },
+        //     {
+        //         "id": "007",
+        //         "email": "c1@att.net",
+        //         "password": "c1",
+        //         "hairType": "4",
+        //         "shampoo": "brandC",
+        //         "conditioner": "brandC",
+        //         "otherProducts": "brandC"
+        //     },
+        //     {
+        //         "id": "008",
+        //         "email": "c2@att.net",
+        //         "password": "b2",
+        //         "hairType": "4",
+        //         "shampoo": "brandC",
+        //         "conditioner": "brandC",
+        //         "otherProducts": "brandC"
+        //     }
+    
+        // ]}
+
+        function preloadedUserData(){
+       
+            var data0 = {
+                id: "000",
+                email: "a@att.net",
+                password: "a",
+                hairType: "2",
+                shampoo: "brandA",
+                conditioner: "brandA",
+                otherProducts: "brandA"
+            };
+            users.push(data0)
+            var data1 = {
+                id: "001",
+                email: "a1@att.net",
+                password: "a",
+                hairType: "2",
+                shampoo: "brandA",
+                conditioner: "brandA",
+                otherProducts: "brandA"
+            };
+            users.push(data1)
+            var data2 = {
+                id: "002",
+                email: "a2@att.net",
+                password: "b",
+                hairType: "2",
+                shampoo: "brandB",
+                conditioner: "brandB",
+                otherProducts: "brandB"
+            };
+            users.push(data2)
+
+            var data3 = {
+                id: "003",
+                email: "b@att.net",
+                password: "b",
+                hairType: "3",
+                shampoo: "brandB",
+                conditioner: "brandB",
+                otherProducts: "brandB"
+            };
+            users.push(data3)
+
+            var data4 = {
+                id: "004",
+                email: "b1@att.net",
+                password: "b",
+                hairType: "3",
+                shampoo: "brandB",
+                conditioner: "brandB",
+                otherProducts: "brandB"
+            };
+            users.push(data4)
+            
+            var data5 = {
+                id: "005",
+                email: "b2@att.net",
+                password: "b",
+                hairType: "3",
+                shampoo: "brandB",
+                conditioner: "brandB",
+                otherProducts: "brandB"
+            };
+            users.push(data5)
+            
+            var data6 = {
+                id: "006",
+                email: "c@att.net",
+                password: "c",
+                hairType: "4",
+                shampoo: "brandB",
+                conditioner: "brandB",
+                otherProducts: "brandB"
+            };   
+           users.push(data6);
+            
+           var data7 = {
+                id: "007",
+                email: "c1@att.net",
+                password: "c1",
+                hairType: "4",
+                shampoo: "brandC",
+                conditioner: "brandC",
+                otherProducts: "brandC"
+            };   
+           users.push(data7);
+
+           var data8 = {
+            id: "008",
+            email: "c2@att.net",
+            password: "c1",
+            hairType: "4",
+            shampoo: "brandC",
+            conditioner: "brandC",
+            otherProducts: "brandC"
+            };   
+            users.push(data8);
+            localStorage.setItem('MyUserList', JSON.stringify(users) );
+        }
+        
