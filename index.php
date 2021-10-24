@@ -41,7 +41,7 @@
 
                     <div class="form-group">
                       <label for="hairType">Hair Type</label>
-                      <input type="text" class="form-control" id="hairType" placeholder="2a, 3a, 4c, etc...">
+                      <input type="text" class="form-control" id="hairType" placeholder="2, 3, 4">
                     </div>
                     <div class="form-group">
                       <label for="shampoo">Shampoo</label>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="form-group">
                       <label for="conditioner">Conditioner</label>
-                      <input type="text" class="form-control" id="conditioner" placeholder="REDKEN Curvaceous Conditioner, Ogx Quenching coconut Curls, etc...">
+                      <input type="text" class="form-control" id="conditioner" placeholder="REDKEN Curvaceous Conditioner, OGX Quenching Coconut Curls, etc...">
                     </div>
 
                     <div class="form-group">
