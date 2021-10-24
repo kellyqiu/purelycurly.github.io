@@ -1,13 +1,15 @@
 //UI Variables
 const newUser = document.getElementById("newUser");
 const getStarted = document.getElementById('getStarted');
+const submitImage = document.getElementById('submitImage')
 
 
 //Event Listeners
 newUser.addEventListener('click', saveUserData);
 getStarted.addEventListener('click', showForm);
 document.addEventListener('DOMContentLoaded', preloadedUserData);
-    
+submitImage.addEventListener('click', showHairType)
+
 
 //User Array
 var users = [];
@@ -24,6 +26,11 @@ function hideForm(e){
     var x = document.getElementById('newUserForm')
     x.style.display = "none"
 }
+
+function showHairType(e) {
+    var x = document.getElementById('hairTypeOutput')
+    x.style.display = "block"
+}
 //Save User Data
 function saveUserData(e){
     e.preventDefault();
@@ -37,7 +44,7 @@ function saveUserData(e){
             conditioner: document.getElementById('conditioner').value,
             otherProducts: document.getElementById('otherProducts').value
         }
-        #console.log(users);
+       
         users.push(user);
         document.forms[0].reset();
     }

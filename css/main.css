@@ -1,4 +1,11 @@
 /* Classes */
+.heading{
+    font-family: Satisfy;
+}
+.submessage {
+    font-size: 20px;
+    font-family: Poppins;
+}
 .left-container {
     float: left;
     width: 50%;
@@ -11,8 +18,9 @@
     padding-top: 5%;
 }
 .card-header {
+    font-family: Satisfy;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 .card-text {
     font-size: 17px;
