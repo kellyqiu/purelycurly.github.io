@@ -95,6 +95,10 @@
                       <small class="form-text text-muted">Need help finding your hair type? Try using our hair type finder above!</small>
                     </div>  
                     <button type="submit" class="btn btn-primary" id="submitHairType">Submit</button>
+                    <div id = "idealProducts" style="display:none">
+                      <p id="idealShampoo" class="card-text">The top shampoo for your hair type is </p>
+                      <p id = "idealConditioner" class="card-text">The top conditioner for your hair type is </p>
+                    </div>
                   </form>
                   
 

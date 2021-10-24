@@ -7,7 +7,7 @@ classes = []
 with open("classes.txt", "r") as f:
     classes = f.read().splitlines()
 
-img = cv2.imread('testingImages/2a/2a_5.png')
+img = cv2.imread('testingImages/2a/2a_15.jpg')
 font = cv2.FONT_HERSHEY_PLAIN
 colors = np.random.uniform(0, 255, size=(100, 3))
 

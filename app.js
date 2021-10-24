@@ -75,12 +75,31 @@ function submitHairType(e) {
             }
         }
     }
-    console.log(shampooDict);
-    console.log(conditionerDict);
-
+    brandRep(shampooDict, conditionerDict);
 }
 
-
+function brandRep(shampooDict, conditionerDict) {
+    var brandShampoo = '';
+    var maxShampoo = 0;
+    var brandConditioner = '';
+    var maxConditioner = 0;
+    for (var shampoo in shampooDict) {
+        if (shampooDict[shampoo] > maxShampoo) {
+            maxShampoo = shampooDict[shampoo];
+            brandShampoo = shampoo;
+        }
+    }
+    for (var conditioner in conditionerDict) {
+        if (conditionerDict[conditioner] > maxConditioner) {
+            maxConditioner = conditionerDict[conditioner];
+            brandConditioner = conditioner;
+        }
+    }
+    document.getElementById("idealShampoo").innerHTML += brandShampoo + ".";
+    document.getElementById("idealConditioner").innerHTML += brandConditioner + ".";
+    var x = document.getElementById('idealProducts');
+    x.style.display = "block";
+}
         // preloadedData = {"preloadedData": [
         //     {
         //         "id": "000",
