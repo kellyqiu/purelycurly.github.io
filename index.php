@@ -71,7 +71,7 @@
                         <img src="images/curlpatterns.png" class = "center" style="width: 90%;">
                     </div>
                     <div class = "right-container">
-                        <p class = "card-text">Which hair type are you? Input a picture of your hair below and we'll help you find your hair type!</p>
+                        <p class = "card-text">Which hair type are you? Input a picture of your hair from the back of your head, and we'll help you find your hair type!</p>
                     </div>
                     <div class="form-group">
                       <form action="" method="POST" enctype="multipart/form-data">
